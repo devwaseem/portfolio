@@ -15,7 +15,8 @@ export default StyleSheet.create({
   },
   'navbar-default navbar-nav>li>a': {
     'color': '#fff',
-    'fontFamily': '"poppinsMedium"'
+    'fontFamily': '"poppinsMedium"',
+    'textAlign': 'right'
   },
   'navbar-default navbar-toggle': {
     'borderColor': 'transparent !important'

@@ -42,8 +42,9 @@ export default StyleSheet.create({
     'color': 'white',
     'fontFamily': '"poppinsMedium"',
     'only screen&&min-device-width  320p&&max-device-width  480p': {
-      'top': [{ 'unit': '%V', 'value': 0.4 }],
-      'fontSize': [{ 'unit': 'px', 'value': 22 }]
+      'top': [{ 'unit': '%V', 'value': 0.36 }],
+      'fontSize': [{ 'unit': 'px', 'value': 22 }],
+      'marginLeft': [{ 'unit': 'px', 'value': 26 }]
     }
   },
   'home-title': {
@@ -63,6 +64,8 @@ export default StyleSheet.create({
     'marginLeft': [{ 'unit': 'px', 'value': 40 }]
   },
   'home-social > img': {
+    'width': [{ 'unit': 'px', 'value': 20 }],
+    'height': [{ 'unit': 'px', 'value': 20 }],
     'marginRight': [{ 'unit': 'px', 'value': 24 }]
   }
 });

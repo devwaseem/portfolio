@@ -13,9 +13,9 @@ import li from '../../img/swli.png'
 export default class Home extends Component {
 
   renderBackground(){
-    if (isMobile) {
-      return <img className="home-bg" src={mbg}/>
-    }
+    // if (isMobile) {
+    //   return <img className="home-bg" src={mbg}/>
+    // }
     return <img className="home-bg" src={dbg}/>
   }
 
@@ -28,10 +28,10 @@ export default class Home extends Component {
         <p className="home-title">
         <TypistLoop interval={1000}>
             {[
-              'I am Waseem Akram',
-              'I am a UI/UX Designer',
-              'I make Mobile Apps',
-              'I make Fullstack Web Apps'
+              'I am Waseem Akram. ',
+              'I am a UI/UX Designer. ',
+              'I make Mobile Apps. ',
+              'I make Web Apps. '
             ].map(text => <Typist key={text} startDelay={200}>{text}<Typist.Backspace count={text.length} delay={1000} /></Typist>)}
           </TypistLoop>
         </p>

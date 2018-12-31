@@ -61,6 +61,8 @@
     margin-left: 40px;
 }
 .home-social > img {
+    width: 20px;
+    height: 20px;
     margin-right: 24px;
 }
 
@@ -69,11 +71,17 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .home-hello{
-        top: 40%;
+        top: 36%;
         font-size: 22px;
+        margin-left: 26px;
     }
     .home-title{
-        top: 48%;
+        top: 42%;
         font-size: 28px;
+        margin-left: 26px;
+    }
+    .home-social{
+        top: 52%;
+        margin-left: 26px;
     }
   }

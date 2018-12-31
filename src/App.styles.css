@@ -8,12 +8,12 @@
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .home-section{
-    height: 520px;
+    height: 720px;
   }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .home-section{
-    height: 520px;
+    height: 640px;
   }
 }

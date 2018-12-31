@@ -12,6 +12,7 @@
 .navbar-default .navbar-nav>li>a {
     color: #fff;
     font-family:"poppinsMedium";
+    text-align: right;
 }
 
 .navbar-default .navbar-toggle {
