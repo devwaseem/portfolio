@@ -10,7 +10,7 @@
     height: 100%;
 }
 
-.home-dec-left{
+/* .home-dec-left{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -28,7 +28,7 @@
     background: white;
     width: 1000px;
     height: 240px;
-}
+} */
 
 .home-hello{
     position: absolute;
@@ -39,6 +39,7 @@
     height: auto;
     font-size: 32px;
     color: white;
+    font-family: "poppinsMedium"
 }
 
 
@@ -49,14 +50,18 @@
     margin-left: 40px;
     font-size: 48px;
     color: white;
+    font-family: "poppinsBold"
 }
 
-.home-particles{
-    width: 100%;
-    height:100%;
+.home-social{
     position: absolute;
-    top:0;
-    left:0;
+    display: flex;
+    top: 48%;
+    left: 0;
+    margin-left: 40px;
+}
+.home-social > img {
+    margin-right: 24px;
 }
 
 

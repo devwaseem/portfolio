@@ -8,7 +8,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "poppinsRegular";
+  src: url("./fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: "poppinsMedium";
+  src: url("./fonts/Poppins-Medium.otf");
+}
+
+@font-face {
+  font-family: "poppinsBold";
+  src: url("./fonts/Poppins-Bold.otf");
+}
+
+@font-face {
+  font-family: "poppinsExtraBold";
+  src: url("./fonts/Poppins-ExtraBold.otf");
 }

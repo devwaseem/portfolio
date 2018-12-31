@@ -36,7 +36,10 @@ export default class Home extends Component {
           </TypistLoop>
         </p>
         <div className="home-social">
-            <img src={}/>
+            <img src={fb}/>
+            <img src={twt}/>
+            <img src={ig}/>
+            <img src={li}/>
         </div>
       
       </div>

@@ -12,24 +12,25 @@ export default StyleSheet.create({
     'width': [{ 'unit': '%H', 'value': 1 }],
     'height': [{ 'unit': '%V', 'value': 1 }]
   },
-  'home-dec-left': {
-    'position': 'absolute',
-    'left': [{ 'unit': 'px', 'value': 0 }],
-    'bottom': [{ 'unit': 'px', 'value': 0 }],
-    'transform': 'rotate(24deg) translate(-130px,130px)',
-    'background': 'white',
-    'width': [{ 'unit': 'px', 'value': 400 }],
-    'height': [{ 'unit': 'px', 'value': 150 }]
-  },
-  'home-dec-right': {
-    'position': 'absolute',
-    'left': [{ 'unit': 'px', 'value': 0 }],
-    'bottom': [{ 'unit': 'px', 'value': 0 }],
-    'transform': 'rotate(-10deg) translate(10px,150px)',
-    'background': 'white',
-    'width': [{ 'unit': 'px', 'value': 1000 }],
-    'height': [{ 'unit': 'px', 'value': 240 }]
-  },
+  // .home-dec-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(24deg) translate(-130px,130px);
+    background: white;
+    width: 400px;
+    height: 150px;
+}
+
+.home-dec-right{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-10deg) translate(10px,150px);
+    background: white;
+    width: 1000px;
+    height: 240px;
+}
   'home-hello': {
     'position': 'absolute',
     'top': [{ 'unit': '%V', 'value': 0.3 }],
@@ -39,6 +40,7 @@ export default StyleSheet.create({
     'height': [{ 'unit': 'string', 'value': 'auto' }],
     'fontSize': [{ 'unit': 'px', 'value': 32 }],
     'color': 'white',
+    'fontFamily': '"poppinsMedium"',
     'only screen&&min-device-width  320p&&max-device-width  480p': {
       'top': [{ 'unit': '%V', 'value': 0.4 }],
       'fontSize': [{ 'unit': 'px', 'value': 22 }]
@@ -50,13 +52,17 @@ export default StyleSheet.create({
     'left': [{ 'unit': 'px', 'value': 0 }],
     'marginLeft': [{ 'unit': 'px', 'value': 40 }],
     'fontSize': [{ 'unit': 'px', 'value': 48 }],
-    'color': 'white'
+    'color': 'white',
+    'fontFamily': '"poppinsBold"'
   },
-  'home-particles': {
-    'width': [{ 'unit': '%H', 'value': 1 }],
-    'height': [{ 'unit': '%V', 'value': 1 }],
+  'home-social': {
     'position': 'absolute',
-    'top': [{ 'unit': 'px', 'value': 0 }],
-    'left': [{ 'unit': 'px', 'value': 0 }]
+    'display': 'flex',
+    'top': [{ 'unit': '%V', 'value': 0.48 }],
+    'left': [{ 'unit': 'px', 'value': 0 }],
+    'marginLeft': [{ 'unit': 'px', 'value': 40 }]
+  },
+  'home-social > img': {
+    'marginRight': [{ 'unit': 'px', 'value': 24 }]
   }
 });
