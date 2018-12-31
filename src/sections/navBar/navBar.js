@@ -11,7 +11,7 @@ export default class WNavBar extends Component {
 
 
   state = {
-    scrolled:''
+    navScrolled:'',
   }
 
   componentDidMount(){
@@ -23,13 +23,13 @@ export default class WNavBar extends Component {
    
     if (!ticking) {
       window.requestAnimationFrame(() => { 
-        if(lastScrollY>20){
+        if(lastScrollY>100){
           this.setState({
-            scrolled:'scrolled'
+            scrolled:'scrolled',
           })
         }else{
           this.setState({
-            scrolled:''
+            scrolled:'',
           })
         }
         ticking = false;
@@ -41,7 +41,7 @@ export default class WNavBar extends Component {
 
     render(){
         return(
-          <Navbar collapseOnSelect fixedTop>
+          <Navbar collapseOnSelect fixedTop className={this.state.scrolled}>
           <Navbar.Header>
             <Navbar.Brand>
               <img src={logowhite} alt="logo"/>

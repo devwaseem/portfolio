@@ -67,5 +67,17 @@ export default StyleSheet.create({
     'width': [{ 'unit': 'px', 'value': 20 }],
     'height': [{ 'unit': 'px', 'value': 20 }],
     'marginRight': [{ 'unit': 'px', 'value': 24 }]
+  },
+  'home-scroll': {
+    'position': 'absolute',
+    'top': [{ 'unit': '%V', 'value': 0.6 }],
+    'left': [{ 'unit': 'px', 'value': 0 }],
+    'width': [{ 'unit': 'px', 'value': 24 }],
+    'height': [{ 'unit': 'px', 'value': 40 }],
+    'marginLeft': [{ 'unit': 'px', 'value': 60 }],
+    'animationName': 'scrollIndicatorAnimation',
+    'animationDuration': '3s',
+    'animationIterationCount': 'infinite',
+    'animationTimingFunction': 'ease-in-out'
   }
 });

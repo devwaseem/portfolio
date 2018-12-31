@@ -1,0 +1,21 @@
+.WButton{
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WButton:hover{
+    background: black;
+    color: white
+}
+
+.WButton-text{
+    text-align: center;
+    margin: 0 auto;
+    font-family: "poppinsMedium";
+    user-select: none;
+}

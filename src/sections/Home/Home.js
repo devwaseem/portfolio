@@ -9,21 +9,15 @@ import fb from '../../img/swfb.png'
 import twt from '../../img/swtw.png'
 import ig from '../../img/swig.png'
 import li from '../../img/swli.png'
-
+import scroll from '../../img/scroll.png'
 export default class Home extends Component {
 
-  renderBackground(){
-    // if (isMobile) {
-    //   return <img className="home-bg" src={mbg}/>
-    // }
-    return <img className="home-bg" src={dbg}/>
-  }
+
 
   render() {
     return (
       <div className={"home-containter " + this.props.className}>
-      
-        {this.renderBackground()}
+        <img className="home-bg" src={dbg}/>
         <p className="home-hello">Hello & Welcome</p>
         <p className="home-title">
         <TypistLoop interval={1000}>
@@ -41,7 +35,7 @@ export default class Home extends Component {
             <img src={ig}/>
             <img src={li}/>
         </div>
-      
+        <img className="home-scroll" src={scroll}/>
       </div>
     )
   }

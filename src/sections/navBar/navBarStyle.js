@@ -5,8 +5,12 @@ export default StyleSheet.create({
     'background': 'transparent',
     'borderColor': 'transparent'
   },
+  'scrolled': {
+    'background': 'black !important'
+  },
   'navbar-brand': {
     'marginTop': [{ 'unit': 'px', 'value': 10 }],
+    'marginBottom': [{ 'unit': 'px', 'value': 10 }],
     'padding': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }],
     'marginLeft': [{ 'unit': 'px', 'value': 20 }, { 'unit': 'string', 'value': '!important' }],
     'only screen&&min-device-width  320p&&max-device-width  480p': {
@@ -16,7 +20,9 @@ export default StyleSheet.create({
   'navbar-default navbar-nav>li>a': {
     'color': '#fff',
     'fontFamily': '"poppinsMedium"',
-    'textAlign': 'right'
+    'textAlign': 'right',
+    'marginTop': [{ 'unit': 'px', 'value': 10 }],
+    'marginBottom': [{ 'unit': 'px', 'value': 10 }]
   },
   'navbar-default navbar-toggle': {
     'borderColor': 'transparent !important'
