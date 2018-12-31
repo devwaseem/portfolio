@@ -1,0 +1,74 @@
+.home-containter{
+    position: relative;
+    overflow: hidden
+}
+.home-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-dec-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(24deg) translate(-130px,130px);
+    background: white;
+    width: 400px;
+    height: 150px;
+}
+
+.home-dec-right{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-10deg) translate(10px,150px);
+    background: white;
+    width: 1000px;
+    height: 240px;
+}
+
+.home-hello{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    margin-left: 40px;
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    color: white;
+}
+
+
+.home-title{
+    position: absolute;
+    top: 36%;
+    left: 0;
+    margin-left: 40px;
+    font-size: 48px;
+    color: white;
+}
+
+.home-particles{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .home-hello{
+        top: 40%;
+        font-size: 22px;
+    }
+    .home-title{
+        top: 48%;
+        font-size: 28px;
+    }
+  }
