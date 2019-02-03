@@ -5,7 +5,7 @@ import WButton from '../../components/WButton/WButton';
 export default class About extends Component {
   render() {
     return (
-      <div className={"About-Container "+ this.props.className }>
+      <div id="about" className={"About-Container "+ this.props.className }>
         <div className="About-image-container">
         <img className="About-image" src={profileImage} alt="profile_picture"/>
         </div>

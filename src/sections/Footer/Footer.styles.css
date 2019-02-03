@@ -1,0 +1,14 @@
+.footer-container{
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    color: white;
+    font-size: 18px;
+    font-family: "poppinsMedium";
+}

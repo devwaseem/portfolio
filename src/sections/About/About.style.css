@@ -9,12 +9,12 @@
     flex:1.6;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .About-image{
     width:80%;
-    height: 100%;
-    object-fit: contain
+    height: 80%;
+    object-fit: cover
 }
 
 .About-bio{
@@ -22,8 +22,6 @@
     padding-top: 20px;
     padding-right: 80px
 }
-
-
 
 .About-bio-role{
     font-family: "poppinsRegular";

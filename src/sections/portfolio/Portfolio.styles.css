@@ -7,11 +7,11 @@
      overflow: hidden;
      width: 100%;
      height:auto;     
-     padding: 48px;
+     padding: 40px 160px;
      margin-top: 30px;
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: repeat(6,300px);
+     grid-template-rows: repeat(5,300px);
      grid-gap: 26px;  
 }
 
@@ -46,9 +46,16 @@
      grid-row: 4/5;
 }
 
-
-@media only screen and (min-device-width : 700px) and  (max-device-width : 1000px){
+@media only screen and (min-device-width : 700px) and  (max-device-width : 1200px){
      .portfolio-components-container{
+          padding: 40px 40px;
+          grid-template-columns: 1fr 1fr;
+     }  
+}
+
+@media only screen and (min-device-width : 700px) and  (max-device-width : 900px){
+     .portfolio-components-container{
+          padding: 40px 80px;
           grid-template-columns: 1fr 1fr;
      }
 
@@ -88,6 +95,7 @@
 @media only screen and (min-device-width : 550px) and  (max-device-width : 700px){
 
      .portfolio-components-container{
+          padding: 40px 40px;
           grid-template-columns: 1fr;
      }
 
@@ -126,6 +134,7 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .portfolio-components-container{
           display: flex;
+          padding: 40px 40px;
           justify-content: center;
           align-items: center;
           flex-direction: column;

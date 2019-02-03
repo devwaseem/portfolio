@@ -36,7 +36,7 @@ export default class PortfolioComponent extends Component {
         <p className={"portfolio-component-show "  + "animationDefaults " + this.state.showAnimation} 
           onClick={()=>window.open(this.props.url)}
           ><u>Show</u></p>
-      </div>
+        </div>
     )
   }
 }

@@ -3,7 +3,6 @@ import {Navbar,NavItem,Nav} from 'react-bootstrap'
 import Scroll from 'react-scroll-to-element';
 import './navBarStyle.css'
 import logowhite from '../../img/logowhite.png'
-import logoblack from '../../img/logoblack.png'
 let lastScrollY = 0;
 let ticking = false;
 
@@ -20,7 +19,6 @@ export default class WNavBar extends Component {
 
   handleScroll = () => {
     lastScrollY = window.scrollY;
-   
     if (!ticking) {
       window.requestAnimationFrame(() => { 
         if(lastScrollY>100){
@@ -50,18 +48,26 @@ export default class WNavBar extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
+            <Scroll type="id" element="home" >
               <NavItem eventKey={1} href="#">
                 Home
               </NavItem>
+            </Scroll>
+            <Scroll type="id" element="about" offset={-100}>
               <NavItem eventKey={2} href="#">
                 About
               </NavItem>
+              </Scroll>
+              <Scroll type="id" element="portfolio" offset={-100}>
               <NavItem eventKey={3} href="#">
                 Portfolio
               </NavItem>
+              </Scroll>
+              <Scroll type="id" element="contact" offset={-100}>
               <NavItem eventKey={4} href="#">
                 Contact
               </NavItem>
+              </Scroll>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -1,0 +1,45 @@
+.HireMeSection-container{
+    width: 100%;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.HireMeSection-parallax{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HireMeSection-parallax-title {
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    font-family: "poppinsBold"
+}
+
+.HireMeButton {
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    border-color: white;
+    font-family: "poppinsMedium";
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 6px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+.HireMeButton:hover, .HireMeButton:active {
+    background: white;
+    color: black;
+    text-decoration: none;
+}

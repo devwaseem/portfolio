@@ -9,20 +9,27 @@ export default StyleSheet.create({
     'overflow': 'hidden',
     'width': [{ 'unit': '%H', 'value': 1 }],
     'height': [{ 'unit': 'string', 'value': 'auto' }],
-    'padding': [{ 'unit': 'px', 'value': 48 }, { 'unit': 'px', 'value': 48 }, { 'unit': 'px', 'value': 48 }, { 'unit': 'px', 'value': 48 }],
+    'padding': [{ 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 160 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 160 }],
     'marginTop': [{ 'unit': 'px', 'value': 30 }],
     'display': 'grid',
     'gridTemplateColumns': '1fr 1fr 1fr',
-    'gridTemplateRows': 'repeat(6,300px)',
+    'gridTemplateRows': 'repeat(5,300px)',
     'gridGap': '26px',
-    'only screen&&min-device-width  700p&&max-device-width  1000p': {
+    'only screen&&min-device-width  700p&&max-device-width  1200p': {
+      'padding': [{ 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }],
+      'gridTemplateColumns': '1fr 1fr'
+    },
+    'only screen&&min-device-width  700p&&max-device-width  900p': {
+      'padding': [{ 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 80 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 80 }],
       'gridTemplateColumns': '1fr 1fr'
     },
     'only screen&&min-device-width  550p&&max-device-width  700p': {
+      'padding': [{ 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }],
       'gridTemplateColumns': '1fr'
     },
     'only screen&&min-device-width  320p&&max-device-width  480p': {
       'display': 'flex',
+      'padding': [{ 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }, { 'unit': 'px', 'value': 40 }],
       'justifyContent': 'center',
       'alignItems': 'center',
       'flexDirection': 'column'

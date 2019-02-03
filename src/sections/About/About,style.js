@@ -14,15 +14,15 @@ export default StyleSheet.create({
     'flex': '1.6',
     'display': 'flex',
     'justifyContent': 'center',
-    'alignItems': 'center',
+    'alignItems': 'flex-start',
     'only screen&&min-device-width  768p&&max-device-width  1024p': {
       'display': 'none'
     }
   },
   'About-image': {
     'width': [{ 'unit': '%H', 'value': 0.8 }],
-    'height': [{ 'unit': '%V', 'value': 1 }],
-    'objectFit': 'contain'
+    'height': [{ 'unit': '%V', 'value': 0.8 }],
+    'objectFit': 'cover'
   },
   'About-bio': {
     'flex': '3',

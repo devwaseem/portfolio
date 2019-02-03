@@ -17,7 +17,6 @@ export default StyleSheet.create({
   },
   'portfolio-section': {
     'width': [{ 'unit': '%H', 'value': 1 }],
-    'height': [{ 'unit': 'px', 'value': 500 }],
     'marginBottom': [{ 'unit': 'px', 'value': 100 }],
     'marginTop': [{ 'unit': 'px', 'value': 100 }]
   }
