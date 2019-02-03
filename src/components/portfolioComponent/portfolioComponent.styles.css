@@ -1,0 +1,155 @@
+.portfolioComponent-container{
+    position: relative;
+}
+
+.portfolioComponent-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+
+}
+
+
+.portfolio-component-title{
+    position: absolute;
+    top:10%;
+    left: 0;
+    margin:24px;
+    font-size: 20px;
+    opacity: 0;
+    font-family: "poppinsBold"
+}
+
+.portfolio-component-show{
+    position: absolute;
+    top:50%;
+    left: 0;
+    margin: 24px;
+    font-size: 16px;
+    opacity: 0;
+    font-family: "poppinsMedium";
+    user-select: none;
+    cursor: pointer
+    
+}
+
+.portfolioComponent-overlays{
+    width: 100%;
+    height: 100%;
+}
+
+.upperOverlay{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background: #F2F2F2;   
+}
+
+.lowerOverlay{
+    top: 50%;
+    right: 0;
+    position: absolute;
+    width: 0%;
+    height: 50%;
+    background: #F2F2F2;   
+}
+
+.animationDefaults {
+    animation-duration: 0.4s;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.overlayAnimation-in {
+    animation-name: overlayKeyframeIn;
+}
+
+.overlayAnimation-out {
+    animation-name: overlayKeyframeOut;
+}
+
+
+.titleAnimation-in{
+    animation-delay: 0.2s;
+    animation-name: titleIn;
+}
+
+.titleAnimation-out{
+    animation-name: titleOut;
+}
+
+.showAnimation-in{
+    animation-delay: 0.1s;
+    animation-name: showIn;
+}
+
+.showAnimation-out{
+    animation-name: showOut;
+}
+
+@keyframes titleIn {
+    from{
+        transform: translate(0px,-20px);
+        opacity:0.0;
+    }
+    to{
+        transform: translate(0px,0px);
+        opacity:1.0;
+    }
+}
+
+@keyframes titleOut {
+    from{
+        transform: translate(0px,0px);
+        opacity:1.0;
+    }
+    to{
+        transform: translate(0px,-20px);
+        opacity:0.0;
+    }
+}
+
+@keyframes showIn {
+    from{
+        transform: translate(0px,20px);
+        opacity:0.0;
+    }
+    to{
+        transform: translate(0px,0px);
+        opacity:1.0;
+    }
+}
+
+@keyframes showOut{
+    from{
+        transform: translate(0px,0px);
+        opacity:1.0;
+    }
+    to{
+        transform: translate(0px,20px);
+        opacity:0.0;
+    }
+}
+
+@keyframes overlayKeyframeIn{
+    from {
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes overlayKeyframeOut{
+    from {
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}

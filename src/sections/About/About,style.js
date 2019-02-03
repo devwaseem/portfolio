@@ -5,7 +5,7 @@ export default StyleSheet.create({
     'overflow': 'hidden',
     'display': 'flex',
     'width': [{ 'unit': '%H', 'value': 1 }],
-    'height': [{ 'unit': 'px', 'value': 600 }],
+    'height': [{ 'unit': 'string', 'value': 'auto' }],
     'only screen&&min-device-width  320p&&max-device-width  480p': {
       'height': [{ 'unit': 'px', 'value': 700 }]
     }
@@ -21,16 +21,13 @@ export default StyleSheet.create({
   },
   'About-image': {
     'width': [{ 'unit': '%H', 'value': 0.8 }],
-    'height': [{ 'unit': '%V', 'value': 0.9 }]
+    'height': [{ 'unit': '%V', 'value': 1 }],
+    'objectFit': 'contain'
   },
   'About-bio': {
     'flex': '3',
     'paddingTop': [{ 'unit': 'px', 'value': 20 }],
     'paddingRight': [{ 'unit': 'px', 'value': 80 }]
-  },
-  'section-title': {
-    'fontFamily': '"poppinsBold"',
-    'fontSize': [{ 'unit': 'px', 'value': 36 }]
   },
   'About-bio-role': {
     'fontFamily': '"poppinsRegular"',
@@ -42,7 +39,7 @@ export default StyleSheet.create({
     'marginTop': [{ 'unit': 'px', 'value': 18 }],
     'fontSize': [{ 'unit': 'px', 'value': 20 }],
     'color': '#828282',
-    'lineHeight': [{ 'unit': 'px', 'value': 1.5 }],
+    'lineHeight': [{ 'unit': 'px', 'value': 1.6 }],
     'textAlign': 'justify'
   },
   'About-bio-text-bold': {

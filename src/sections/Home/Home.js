@@ -23,7 +23,7 @@ export default class Home extends Component {
         <TypistLoop interval={1000}>
             {[
               'I am Waseem Akram. ',
-              'I am a UI/UX Designer. ',
+              'I am an UI/UX Designer. ',
               'I make Mobile Apps. ',
               'I make Web Apps. '
             ].map(text => <Typist key={text} startDelay={200}>{text}<Typist.Backspace count={text.length} delay={1000} /></Typist>)}

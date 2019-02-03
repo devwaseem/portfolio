@@ -6,12 +6,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-.WButton:hover{
+.WButton:hover, .WButton:active {
     background: black;
-    color: white
+    color: white;
+    cursor: pointer;
 }
+
+
 
 .WButton-text{
     text-align: center;

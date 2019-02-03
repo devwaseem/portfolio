@@ -12,7 +12,13 @@ export default StyleSheet.create({
   },
   'WButton:hover': {
     'background': 'black',
-    'color': 'white'
+    'color': 'white',
+    'cursor': 'pointer'
+  },
+  'WButton:active': {
+    'background': 'black',
+    'color': 'white',
+    'cursor': 'pointer'
   },
   'WButton-text': {
     'textAlign': 'center',
